@@ -384,7 +384,7 @@ static void lv_roller_event(const lv_obj_class_t * class_p, lv_event_t * e)
     else if(code == LV_EVENT_DEFOCUSED) {
         /*Revert the original state*/
         if(roller->sel_opt_id != roller->sel_opt_id_ori) {
-            roller->sel_opt_id = roller->sel_opt_id_ori;
+            /*roller->sel_opt_id = roller->sel_opt_id_ori;*/
             refr_position(obj, LV_ANIM_ON);
         }
     }
